@@ -21,7 +21,7 @@
 
     <!-- 引用dubbo服务 -->
     <dubbo:application name="book-manager-web"/>
-    <dubbo:registry protocol="zookeeper" address="192.168.1.108:31001"/>
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:31001"/>
     <dubbo:reference interface="com.yzx.service.LifeService" id="lifeService" />
 <!--
 

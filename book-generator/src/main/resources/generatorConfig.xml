@@ -35,7 +35,7 @@
             targetPackage     指定生成的model生成所在的包名
             targetProject     指定在该项目下所在的路径
         -->
-        <javaModelGenerator targetPackage="com.yzx.dao.entity"
+        <javaModelGenerator targetPackage="com.yzx.entity"
                             targetProject="src/main/java">
 
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
@@ -65,63 +65,21 @@
         </javaClientGenerator>
 
 
-        <table tableName="content"
+        <!--<table tableName="content"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
-        </table>
-
-        <table tableName="content_category"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="item"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="item_cat"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="item_desc"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="item_param"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="item_param_item"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="order"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="order_item"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="order_shipping"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="user"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-
-
+        </table>-->
+        <table tableName="content"/>
+        <table tableName="tb_content_category"/>
+        <table tableName="tb_item"/>
+        <table tableName="tb_item_cat"/>
+        <table tableName="tb_item_desc"/>
+        <table tableName="tb_item_param"/>
+        <table tableName="tb_item_param_item"/>
+        <table tableName="tb_order"/>
+        <table tableName="tb_order_item"/>
+        <table tableName="tb_order_shipping"/>
+        <table tableName="tb_user"/>
     </context>
 </generatorConfiguration>

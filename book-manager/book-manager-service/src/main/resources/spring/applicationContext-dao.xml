@@ -28,7 +28,7 @@
         <property name="configLocation" value="classpath:mybatis/sqlmapConfig.xml" />
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.yzx.mapper" />
+        <property name="basePackage" value="com.yzx.dao" />
     </bean>
     <!-- 事务管理器 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
