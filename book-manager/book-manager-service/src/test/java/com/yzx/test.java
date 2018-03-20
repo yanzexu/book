@@ -21,14 +21,13 @@ public class test {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
         //从容器中获取mapper代理对象
         TbItemMapper itemMapper = context.getBean(TbItemMapper.class);
-        TbItem tbItem = itemMapper.selectByPrimaryKey(666l);
-        /*//执行sql语句之前设置分页信息，使用pageHelper中的startPage方法
+        //执行sql语句之前设置分页信息，使用pageHelper中的startPage方法
         PageHelper.startPage(1,10);
         //执行查询
         TbItemExample example = new TbItemExample();
         List<TbItem> tbItems = itemMapper.selectByExample(example);
         //取分页信息   pageInfo(总记录数  总页数  当前页码  ---)
         PageInfo<TbItem> pageInfo = new PageInfo<>(tbItems);
-        System.out.println( pageInfo.getTotal() + " : " +  tbItems.size());*/
+        System.out.println( pageInfo.getTotal() + " : " +  tbItems.size());
     }
 }
