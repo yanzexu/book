@@ -20,5 +20,7 @@
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.yzx.service.LifeService" ref="lifeService" />
     <bean id="lifeService" class="com.yzx.LifeServiceImpl" />
+    <dubbo:service interface="com.yzx.service.ItemService" ref="itemService" />
+    <bean id="itemService" class="com.yzx.impl.ItemServiceImpl" />
 
 </beans>

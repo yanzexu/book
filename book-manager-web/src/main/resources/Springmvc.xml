@@ -23,6 +23,7 @@
     <dubbo:application name="book-manager-web"/>
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:31001"/>
     <dubbo:reference interface="com.yzx.service.LifeService" id="lifeService" />
+    <dubbo:reference interface="com.yzx.service.ItemService" id="itemService" />
 <!--
 
 1.在 dubbo.xml 中配置

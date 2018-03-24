@@ -1,6 +1,8 @@
 package com.yzx.entity;
 
-public class TbOrderItem {
+import java.io.Serializable;
+
+public class TbOrderItem implements Serializable {
     private String id;
 
     private String itemId;
